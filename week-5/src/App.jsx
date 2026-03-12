@@ -31,7 +31,7 @@ function App() {
   //useEffect demo 2
   useEffect(() => {
     if (likes > 0) {
-      setLikeMessage(`Thanks for liking my portfolio! ❤️`);
+      setLikeMessage(`Thanks for liking my portfolio!`);
     }
   }, [likes]);
 
@@ -122,7 +122,7 @@ function App() {
         {/* useState Demo Section */}
         <section>
           <h2>Portfolio Likes: {likes}</h2>
-          <button onClick={() => setLikes(likes + 1)}>Like ❤️</button>
+          <button onClick={() => setLikes(likes + 1)}>Like</button>
           <p>{likeMessage}</p>
         </section>
 
